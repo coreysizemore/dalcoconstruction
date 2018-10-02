@@ -1,0 +1,162 @@
+/* color variables */
+
+$colorone: #d53832;
+$colortwo: #222222;
+$colorthree: #333333;
+
+/* end color variables */
+
+header {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	#home_logo {
+		#home_page_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						background: $colorone;
+					}
+				}
+			}
+		}
+	}
+}
+
+header#header_page {
+	background: url('../img/page1.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+a#searchopen:link, a#searchopen:visited, a#mobileopen:link, a#mobileopen:visited {
+	color: $colorone;
+}
+
+.content {
+	h1,
+	h2.page_heading {
+		color: $colorone;
+	}
+	
+	hr.divider {
+		background: $colorone;
+	}
+	
+	a:link,a:visited {
+		color: $colorone;
+	}
+	
+	form {
+		input[type="submit"] {
+			background: $colorone;
+		}
+		
+		input[type="text"] {
+			border: 1px solid $colorone;
+		}
+		
+		input:focus {
+			border: 1px solid $colorone;
+		}
+	}
+}
+
+.sidebar {
+	.business_information_wrapper {
+		background: $colorone;
+	}
+}
+
+.edit_button {
+	a:link,a:visited {
+		background: $colorone;
+	}
+}
+
+#gallery {
+	.gallery_wrapper {
+		position: relative;
+		
+		.gallery_title {
+			bottom: 10px;
+			color: #ffffff;
+			font-weight: 500;
+			left: 10px;
+			position:absolute;
+			text-shadow: 1px 1px 2px #000;
+			z-index: 3;
+		}
+		
+		a:link,a:visited {
+			img {
+				width: 130%;
+			}
+		}
+	}
+}
+
+article.blog_preview {
+	span.edit,
+	span.author {
+		a:link,a:visited {
+			color: $colorone;
+		}
+	}
+}
+
+
+@media (min-width: 980px) and (max-width: 1220px) {
+
+	
+}
+	
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/page1_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+}
+	
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/page1_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+}
+	
+@media (min-width: 0px) and (max-width: 479px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 130%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/page1_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+}
