@@ -33,6 +33,11 @@ header#header_page {
 
 a#searchopen:link, a#searchopen:visited, a#mobileopen:link, a#mobileopen:visited {
 	color: $colorone;
+	background: #ffffff;
+}
+
+#mobile_nav {
+	background: rgba($colorone, .95);
 }
 
 .content {
